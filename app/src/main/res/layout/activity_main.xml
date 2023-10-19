@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:backgroundTint="#E91E63"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -13,6 +14,14 @@
         tools:layout_editor_absoluteX="1dp"
         tools:layout_editor_absoluteY="1dp">
 
+        <TextView
+            android:id="@+id/respuesta"
+            android:layout_width="match_parent"
+            android:layout_height="14dp"
+            android:layout_weight="1"
+            android:text="0"
+            android:textSize="48sp" />
+
         <EditText
             android:id="@+id/num1"
             android:layout_width="match_parent"
@@ -21,6 +30,7 @@
             android:ems="10"
             android:hint="Digita un número"
             android:inputType="number"
+            android:singleLine="true"
             android:textSize="48sp" />
 
         <EditText
@@ -33,14 +43,6 @@
             android:inputType="number"
             android:textSize="48sp" />
 
-        <TextView
-            android:id="@+id/respuesta"
-            android:layout_width="match_parent"
-            android:layout_height="14dp"
-            android:layout_weight="1"
-            android:text="0"
-            android:textSize="48sp" />
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="96dp"
@@ -49,33 +51,37 @@
 
             <Button
                 android:id="@+id/btnSuma"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
                 android:layout_weight="1"
+                android:backgroundTint="#E91E63"
                 android:text="+"
                 android:textSize="34sp" />
 
             <Button
                 android:id="@+id/btnResta"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
                 android:layout_weight="1"
+                android:backgroundTint="#009688"
                 android:text="-"
                 android:textSize="34sp" />
 
             <Button
                 android:id="@+id/btnMultiplicacion"
-                android:layout_width="101dp"
-                android:layout_height="63dp"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
                 android:layout_weight="1"
+                android:backgroundTint="#8BC34A"
                 android:text="X"
                 android:textSize="24sp" />
 
             <Button
                 android:id="@+id/btnDivision"
-                android:layout_width="102dp"
-                android:layout_height="64dp"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
                 android:layout_weight="1"
+                android:backgroundTint="#FF9800"
                 android:text="/"
                 android:textSize="24sp" />
         </LinearLayout>
